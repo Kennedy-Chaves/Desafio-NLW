@@ -4,7 +4,7 @@
 
 > Trilha Explorer
 
-Projeto construido do evento Next Level Week da Rocketseat
+Desafio realizado através do projeto que fiz no evento NLW da rocketseat
 
 [Clique aqui para acessar](https://kennedy-chaves.github.io/NLW/)
 
@@ -13,6 +13,11 @@ Projeto construido do evento Next Level Week da Rocketseat
 - HTML
 - CSS
 - Git e Github
+
+## Aprendizado
+
+Esse desafio foi muito bom para fixar o que aprendi durante essa semana. 
+Melhorei meus conhecimentos em HTML e css, aprendi a subir projeto no github e o mais importante, tive a certeza de que essa é a área que quero seguir.
 
 ## Contato
 
