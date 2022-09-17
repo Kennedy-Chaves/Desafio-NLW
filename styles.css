@@ -1,0 +1,207 @@
+/* Resetando os atributos padrão dentro do navegador */
+* {
+  /* tira todas as margens */
+ margin: 0;
+ /* tira todos os preenchimentos de caixa */
+padding: 0;
+/* considera somente as medidas de caixa. ou seja nenhuma medida é somada junto a medida principal.  */
+box-sizing: border-box; 
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url(./assets/bg.jpg);
+   /*
+   posicionamento do fundo
+   top:Ajusta a imagem na parte de cima 
+   center:Centraliza a imagem  */
+  background-position: top center;
+  /* tamanho do fundo
+  100% da largura da pagina
+  auto: altura automática */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  /* cores hexadecimais */
+  background-color: #121214;
+}
+
+/* tudo dentro do body recebe esta fonte */
+body * {
+ font-family: 'Inter', sans-serif;
+ /* altura da linha  */
+ line-height: 160%; 
+}
+
+
+header {
+  padding-top: 32px;
+  height: calc(120px + 32px);
+}
+
+header div {
+  width: 120px;
+  margin: auto;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100% );
+  
+  border-radius: 50%;
+  
+  display: flex;
+  padding: 4px;
+
+  transition: transform .3s;
+}
+
+header div:hover {
+  transform: scale(1.1);
+}
+
+header img {
+  
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* main * {
+  border: solid red;
+} */
+
+main {
+  /* largura maxima de todos os itens dentro dele */
+  max-width: 500px;
+/* 90% relativo a largura da tela  */
+  width: 90%;
+  /* Espaçamento entre as caixas e a foto de perfil */
+  margin: 32px auto;
+
+  /* Posiciona os itens um abaixo do outro */
+  display: grid;
+  gap: 24px;
+}
+
+/* cor dos textos de todas as sections */
+section {
+  color: white;
+
+  /* neste caso utilizamos o background image para fazer esse tipo de borda gradient, pois utilizando ela junto com o atributo linear, conseguimos definir a porcentagem de cada cor dentro da borda */
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100% );
+
+  /* Vai dar o espaçamento da parte de cima da caixa, dando o visual desejado, conforme o projeto */
+  padding-top: 4px;
+
+  border-radius: 10px;
+
+}
+
+section div {
+  /* Cor de fundo de cada div */
+  background-color: #2A2634;
+
+  /* Espaçamento da borda */
+  padding: 32px;
+  /* Espaçamento da parte de cima da borda */
+  padding-top: 24px;
+  border-radius: 8px;
+  
+
+}
+
+/* pega todos os h2 dentro das sections */
+section h2 {
+letter-spacing: -0.47px;
+
+}
+
+  section p {
+letter-spacing: -0.18px;
+color: #A1A1AA;
+  }
+
+ section ul {
+    /* visualização dos elementos/caixas 
+    display:block - bloqueia uma linha inteira e joga os proximos elementos para baixo
+    display: flex - Automaticamente alinha os itens um ao lado do outro
+    */
+    display: flex ;
+    /* Espaçamento entre as caixas
+    Só funciona com o display flex ativo */
+
+    /* flex-wrap vai ajustar os itens para baixo dentro da caixa caso seja adicionado mais itens*/
+    flex-wrap: wrap;
+
+    gap: 16px;
+    
+    /* Espaçamento do topo de cada ul */
+    margin-top: 24px;
+  }
+
+  section ul li {
+    transition: transform .3s;
+  }
+
+  section ul li:hover {
+    transform: scale(1.1);
+  }
+
+  /* Aqui é puxado a class game-list e para todas as tags img é aplicado esses atributos. */
+  .games-list img {
+    border-radius: 8px;
+    width: 90px;
+  }
+
+  .channel-list img {
+    border-radius: 50%;
+    width: 50px;
+    border: 1px solid #443E54;
+  }
+
+  /* animation */
+
+  header div {
+    animation: fromTop .7s .2s backwards;
+  }
+
+  main section {
+    animation: fromBottom .7s backwards;
+  }
+  
+  /* main pega o section de filho número 1 */
+  main section:nth-child(1) {
+    animation-delay: 0;
+
+  }
+
+  main section:nth-child(2) {
+    animation-delay: .4s;
+  }
+  
+  main section:nth-child(3) {
+    animation-delay: .8s;
+  }
+
+  @keyframes fromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  @keyframes fromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
