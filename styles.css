@@ -22,8 +22,8 @@ body {
   /* tamanho do fundo
   100% da largura da pagina
   auto: altura automática */
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-size: 175% ;
+  /* background-repeat: no-repeat; */
   /* cores hexadecimais */
   background-color: #121214;
 }
@@ -44,7 +44,7 @@ header {
 header div {
   width: 120px;
   margin: auto;
-  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100% );
+  background-image: radial-gradient(circle at 50% -20.71%, #de9c2c 0, #e5922a 8.33%, #ea852b 16.67%, #ee772d 25%, #f16731 33.33%, #f35436 41.67%, #FF4500 50%, #FF0000 58.33%, #FF0000 66.67%, #e90057 75%, #FF0000 83.33%, #FF0000 91.67%, #FF0000 100%);
   
   border-radius: 50%;
   
@@ -86,7 +86,8 @@ section {
   color: white;
 
   /* neste caso utilizamos o background image para fazer esse tipo de borda gradient, pois utilizando ela junto com o atributo linear, conseguimos definir a porcentagem de cada cor dentro da borda */
-  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100% );
+  /* background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100% ); */
+  background-image: radial-gradient(circle at 50% -20.71%, #C0C0C0, #A9A9A9 8.33%, #808080 16.67%, #FF0000 25%, #FF0000 33.33%, #FF0000 41.67%, #FF4500 50%, #FF0000 58.33%, #FF0000 66.67%, #FF0000 75%, #FF0000 83.33%, #FF0000 91.67%, #FF0000 100%);
 
   /* Vai dar o espaçamento da parte de cima da caixa, dando o visual desejado, conforme o projeto */
   padding-top: 4px;
@@ -97,7 +98,7 @@ section {
 
 section div {
   /* Cor de fundo de cada div */
-  background-color: #2A2634;
+  background-color: #1C1C1C;
 
   /* Espaçamento da borda */
   padding: 32px;
@@ -152,9 +153,14 @@ color: #A1A1AA;
   }
 
   .channel-list img {
-    border-radius: 50%;
-    width: 50px;
-    border: 1px solid #443E54;
+    /* border-radius: 50%; */
+    width: 90px;
+    border-radius: 8px;
+  }
+
+  .social-list img {
+    width: 45px;
+    height: 45px;
   }
 
   /* animation */
