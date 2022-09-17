@@ -147,12 +147,12 @@ color: #A1A1AA;
   }
 
   /* Aqui é puxado a class game-list e para todas as tags img é aplicado esses atributos. */
-  .games-list img {
+  .films-list img {
     border-radius: 8px;
     width: 90px;
   }
 
-  .channel-list img {
+  .series-list img {
     /* border-radius: 50%; */
     width: 90px;
     border-radius: 8px;
