@@ -6,7 +6,7 @@
 
 Desafio realizado através do projeto que fiz no evento NLW da rocketseat
 
-[Clique aqui para acessar](https://kennedy-chaves.github.io/NLW/)
+[Clique aqui para acessar](https://kennedy-chaves.github.io/Desafio-NLW/)
 
 ## Tecnologias
 
